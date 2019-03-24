@@ -2,6 +2,39 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state ={
+			inputDate : "",
+			inputMood : "",
+			inputMessage : "",
+			calendarMoodArray : []
+		}
+		this.getInputDate = this.getInputDate.bind(this);
+		this.getInputMood = this.getInputMood.bind(this);
+		this.getInputMessage = this.getInputDate.bind(this);
+	}
+	getInputDate (e){
+		const inputDate = e.currentTarget.value;
+		this.setState({
+			inputDate
+		})
+	}
+	getInputMood (e) {
+		const inputMood = e.currentTarget.value;
+		this.setState({
+			inputMood
+		})
+	}
+
+	getInputMessage (e) {
+		const inputMessage = e.currentTarget.value;
+		this.setState({
+			inputMessage
+		})
+	}
+
   render() {
     return (
       <div className="App">
