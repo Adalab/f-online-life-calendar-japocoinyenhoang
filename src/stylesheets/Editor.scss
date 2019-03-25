@@ -1,0 +1,42 @@
+.editor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 30px;
+}
+
+.editor__info--container{
+	width: 100%;
+
+}
+
+.editor__date--label{
+	display: block;
+
+}
+.editor__date--input{
+	width: 90%;
+}
+
+
+.editor__mood__label{
+	display: block;
+}
+
+.editor__mood--input{
+
+}
+
+
+.textarea__title{}
+
+.editor__button--container{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.btn{}
+
+.btn__save{}
+.btn__cancel{}
