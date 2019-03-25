@@ -18,7 +18,7 @@ class Editor extends Component {
 					<input className="good__mood editor__mood--input" type="radio" name="good__mood" value="goodMood" onChange={getInputMood} />:)
 					<input className="bad_mood editor__mood--input" type="radio" name="bad__mood" value="badMood" onChange = {getInputMood} />:(
 						<p className="textarea__title">Message:</p>
-						<textarea name="textarea" rows="2" cols="50" placeholder=" Why is such a good day?" onKeyUp={getInputMessage}></textarea>
+						<textarea name="textarea" className="textarea__input" placeholder=" Why is such a good day?" onKeyUp={getInputMessage}></textarea>
 				</div>
 				<div className="editor__button--container">
 				<Link to='/moodCalendar'>

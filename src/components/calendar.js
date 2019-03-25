@@ -1,19 +1,19 @@
 import React, {Component} from "react";
 import {Link} from 'react-router-dom';
+import CalendarMoodResult from './CalendarMoodResult';
+import '../stylesheets/Calendar.scss';
 
 class Calendar extends Component {
 	render() {
-		const {resetEditorInfo} = this.props;
+		const {resetEditorInfo, calendarMoodArray} = this.props;
 		return (
-			<section className ="Calendar">
-			<div className="Calendar__container"></div>
+			<section className ="calendar">
+			<div className="calendar__container"></div>
 			<Link to="/">
 			<div className="calendar__add" onClick={resetEditorInfo}> + </div>
 			</Link>
 			<div className="calendar__result--container">
-					<ul className="calendar__result">
-						<li className="calendar__result--face">:P</li>
-					</ul>
+				<CalendarMoodResult calendarMoodArray={calendarMoodArray}/>
 		</div>
 		</section>
 

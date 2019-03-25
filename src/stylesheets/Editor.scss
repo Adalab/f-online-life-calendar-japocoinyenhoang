@@ -1,8 +1,6 @@
-.editor {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 50px 30px;
+
+.editor{
+		padding: 20% 10%;
 }
 
 .editor__info--container{
@@ -20,6 +18,7 @@
 
 
 .editor__mood__label{
+	margin-top: 20px;
 	display: block;
 }
 
@@ -30,13 +29,44 @@
 
 .textarea__title{}
 
+.textarea__input{
+	width: 90%;
+	min-height: 30px;
+}
+
 .editor__button--container{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	margin: 20px auto;
+
 }
 
-.btn{}
+.btn{
+	width: 120px;
+	display:block;
+	padding: 10px auto;
+	margin: 5px auto;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	&:hover{
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	&.btn__save{
+		background-color: rgb(77, 162, 236);
+		color: white;
+		text-decoration: none;
+
+
+  }
+  &.btn__cancel{
+		color: gray;
+	}
+
+
+}
 
 .btn__save{}
 .btn__cancel{}
